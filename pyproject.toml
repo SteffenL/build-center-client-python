@@ -29,3 +29,11 @@ where = ["src"]
 
 [project.scripts]
 build_center_client = "build_center_client.cli.main:main_cli"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.github"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/build_center_client"]
