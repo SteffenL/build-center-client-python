@@ -3,7 +3,7 @@ import os
 import sys
 from typing import IO, Any
 
-from api.api import WebhookEvent, WebhookType
+from build_center_client.api.api import WebhookEvent, WebhookType
 
 
 class FileArg:

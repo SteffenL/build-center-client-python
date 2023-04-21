@@ -3,8 +3,8 @@ from time import time
 import logging
 import platform
 
-from api.api import AccessFlags, WebhookEvent, WebhookType
-from commands.factory import create_api
+from build_center_client.api.api import AccessFlags, WebhookEvent, WebhookType
+from .factory import create_api
 
 
 initial_access_token_id = "initial"

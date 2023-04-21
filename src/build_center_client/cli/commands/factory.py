@@ -1,5 +1,5 @@
-from api.api import Api
-from api.http import ApiHttpClient
+from build_center_client.api.api import Api
+from build_center_client.api.http import ApiHttpClient
 
 
 def create_api(server: str, token: str, proxy: str = None, **kwargs):

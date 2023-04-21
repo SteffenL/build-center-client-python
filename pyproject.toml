@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "build_center_client"
+version = "0.1.0"
+description = "Build Center Client (Python)"
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [
+  {name = "Steffen André Langnes", email = "steffenl.sw@gmail.com"}
+]
+dependencies = [
+  "dacite>=1.6",
+  "pyhumps<3.0.2",
+  "requests>=2.26",
+]
+
+[project.urls]
+homepage = "https://github.com/SteffenL/python-packaging-example"
+repository = "https://github.com/SteffenL/python-packaging-example.git"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.txt"]
+
+[project.scripts]
+build_center_client = "build_center_client.cli.main:main_cli"

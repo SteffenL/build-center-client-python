@@ -5,7 +5,7 @@ import posixpath
 from enum import Enum
 import json
 
-from api.http import ApiHttpClient
+from .http import ApiHttpClient
 
 
 TRequest = TypeVar("TRequest")

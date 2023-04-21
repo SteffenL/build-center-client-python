@@ -3,14 +3,14 @@ from dataclasses import dataclass
 import posixpath
 from enum import Enum, IntFlag
 
-from api.base_endpoints import \
+from .base_endpoints import \
     CreateResourceEndpoint, \
     CreateResourceWithFileEndpoint, \
     DeleteResourceEndpoint, \
     GetResourceEndpoint, \
     ListResourceEndpoint, \
     UpdateResourceEndpoint
-from api.http import ApiHttpClient
+from .http import ApiHttpClient
 
 
 TEndpoint = TypeVar("TEndpoint")

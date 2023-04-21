@@ -2,10 +2,10 @@ from typing import IO, Dict, Generic, Iterable, List, Sequence, TypeVar
 import humps
 import json
 
-from api.api import AccessFlags, AccessTokenEndpoint, Api, AppEndpoint, \
+from build_center_client.api.api import AccessFlags, AccessTokenEndpoint, Api, AppEndpoint, \
     AssetEndpoint, ReleaseEndpoint, WebhookEndpoint, WebhookEvent, WebhookType
-from api.encoding import ApiJsonEncoder
-from commands.actions import FileArg
+from build_center_client.api.encoding import ApiJsonEncoder
+from .actions import FileArg
 
 
 TEndpoint = TypeVar("TEndpoint")

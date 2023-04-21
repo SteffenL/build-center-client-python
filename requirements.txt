@@ -1,3 +1,0 @@
-dacite>=1.6
-pyhumps<3.0.2
-requests>=2.26

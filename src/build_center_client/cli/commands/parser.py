@@ -2,13 +2,13 @@ import sys
 import os
 import argparse
 
-from commands.actions import FileArg, FileInputAction, FileOutputAction, \
+from .actions import FileArg, FileInputAction, FileOutputAction, \
     StoreKeyValueAction, WebhookEventsAction, WebhookTypeAction
-from commands.commands import AccessTokenCommands, AppCommands, AssetCommands, \
+from .commands import AccessTokenCommands, AppCommands, AssetCommands, \
     ReleaseCommands, WebhookCommands
-from commands.factory import create_cmd_factory
-from commands.setup import cmd_setup
-from commands.test import cmd_test
+from .factory import create_cmd_factory
+from .setup import cmd_setup
+from .test import cmd_test
 
 
 local_server_url = "http://localhost:5000"
