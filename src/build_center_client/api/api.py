@@ -32,7 +32,7 @@ class Asset:
     name: str
 
     id: Optional[str] = None
-    created_at: Optional[int] = None
+    created_at: Optional[Union[int, str]] = None
     content_size: Optional[int] = None
     content_hash_algorithm: Optional[HashAlgorithm] = None
     content_hash: Optional[str] = None
@@ -75,7 +75,7 @@ class Release:
     version: str
 
     id: Optional[str] = None
-    created_at: Optional[int] = None
+    created_at: Optional[Union[int, str]] = None
     title: Optional[str] = None
     description: Optional[str] = None
     commit: Optional[str] = None
@@ -132,7 +132,7 @@ class Webhook:
     events: List[WebhookEvent]
 
     id: Optional[str] = None
-    created_at: Optional[int] = None
+    created_at: Optional[Union[int, str]] = None
 
     _client: ApiHttpClient = None
     _raw: str = None
@@ -163,8 +163,8 @@ class AccessToken:
     id: Optional[str] = None
     description: Optional[str] = None
     value: Optional[str] = None
-    created_at: Optional[int] = None
-    expires_at: Optional[int] = None
+    created_at: Optional[Union[int, str]] = None
+    expires_at: Optional[Union[int, str]] = None
     app_id: Optional[str] = None
     url: Optional[str] = None
 
@@ -205,7 +205,7 @@ class App:
     title: str
 
     id: Optional[str] = None
-    created_at: Optional[int] = None
+    created_at: Optional[Union[int, str]] = None
     description: Optional[str] = None
     public: bool = False
     url: Optional[str] = None
